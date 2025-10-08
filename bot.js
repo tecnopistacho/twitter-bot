@@ -1,6 +1,15 @@
 console.log("Bot is starting...");
 const { TwitterApi } = require('twitter-api-v2');
 require('dotenv').config();
+
+// 🔍 Debug: Check if secrets are loaded
+console.log("Bot is starting on GitHub Actions...");
+console.log("Checking environment variables...");
+console.log("API_KEY exists:", !!process.env.API_KEY);
+console.log("API_SECRET exists:", !!process.env.API_SECRET);
+console.log("ACCESS_TOKEN exists:", !!process.env.ACCESS_TOKEN);
+console.log("ACCESS_SECRET exists:", !!process.env.ACCESS_SECRET);
+
 const fs = require('fs');
 
 // Load tips from your text file
