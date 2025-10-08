@@ -1,0 +1,5 @@
+Use len() to get the length of a list.
+Use enumerate() to loop with index and value.
+Use zip() to combine two lists.
+Use list comprehensions for cleaner loops.
+Use if __name__ == '__main__' to run code only when the file is executed directly.
