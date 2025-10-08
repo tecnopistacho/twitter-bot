@@ -1,3 +1,5 @@
+console.log("Bot is starting on Render...");
+
 console.log("Bot is starting...");
 const { TwitterApi } = require('twitter-api-v2');
 require('dotenv').config();
@@ -21,6 +23,8 @@ const client = new TwitterApi({
 
 // Send the tweet
 client.v2.tweet(randomTip)
-  .then(() => console.log("Tweet sent:", randomTip))
-  .catch(error => console.error("Error sending tweet:", error));
-
+  .then(() => console.log("✅ Tweet sent:", randomTip))
+  .catch(error => {
+    console.error("❌ Error sending tweet:", error);
+    process.exit(1); // force exit with error
+  });
