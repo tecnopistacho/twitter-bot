@@ -1,5 +1,3 @@
-console.log("Bot is starting on Render...");
-
 console.log("Bot is starting...");
 const { TwitterApi } = require('twitter-api-v2');
 require('dotenv').config();
